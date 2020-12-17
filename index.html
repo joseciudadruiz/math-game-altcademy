@@ -14,15 +14,25 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>Maths Game Project</h1>
-          <h2 id="time-left"></h2>
-          <p>second left</p>
-          <h2 id="equation"></h2>
-          <input id="user-input" type="number" />
-          <h4>Score: <span id="score"></span></h4>
+      <div>
+        <p>High Score: <span id="highest-score">0</span></p>
+        <p class="">Current Score: <span id="current-score">0</span></p>
+        <h2 id="time-start">10</h2>
+        <h2 id="seconds-left">Seconds Left</h2>
+        <h2 id="operations">Operation</h2>
+        <input type="number" id="user-answer" max="20">
+        <div id="select-game-button">
+          <div><input type="checkbox" id="add" checked><span> +</span></div>
+          <div><input type="checkbox" id="subs"><span> -</span></div>
+          <div><input type="checkbox" id="mult"><span> *</span></div>
+          <div><input type="checkbox" id="divis"><span> /</span></div>
         </div>
+        <div>
+          <p>Number Limit</p>
+          <p id="number-limit"></p>
+          <input type="range" min="1" max="30" id="number-control">
+        </div>
+        <p id="end-game">Game is over: <button id="restart">One more?</button></p>
       </div>
     </div>
   </body>
